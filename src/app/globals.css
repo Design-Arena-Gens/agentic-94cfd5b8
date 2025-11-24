@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100;
+}
+
+.app-gradient {
+  background: radial-gradient(
+      120% 85% at 10% 10%,
+      rgba(29, 78, 216, 0.18) 0%,
+      transparent 45%
+    ),
+    radial-gradient(
+      90% 75% at 80% 0%,
+      rgba(236, 72, 153, 0.2) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      65% 60% at 50% 100%,
+      rgba(56, 189, 248, 0.18) 0%,
+      transparent 60%
+    ),
+    linear-gradient(120deg, #020617 0%, #0b1120 50%, #111827 100%);
+}
